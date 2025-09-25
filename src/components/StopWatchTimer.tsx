@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react'
+import { useState, useEffect } from 'react'
 
 const StopWatchTimer = () => {
     const [time, setTime] = useState(0);
@@ -35,7 +35,7 @@ const StopWatchTimer = () => {
         setTime(0);
     }
 
-    const formatTime = (time) => {
+    const formatTime = (time: number) => {
         return time < 10 ? `0${time}`: `${time}`;
     }
 
